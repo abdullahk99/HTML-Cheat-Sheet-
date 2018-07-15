@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HTML Cheat Sheet</title>
+  </head>
+  <body>
+    <!--- This is a heading -->
+    <!-- can have headings of different style using CSS -->
+    <h1>This is the heading of the page</h1>
+    <p>
+      <strong>cdincididuntf</strong> Lorem ipsum dolor sit amet,
+      consectetur <em>adipisicing </em> elit, sed do
+      eiusmod tempor incididunt ut labore et
+    </p>
+    <p>
+      <!-- wrap a text that goes to some link -->
+      Lorem ipsum dolor
+      <a href = 'http://www.espncricinfo.com' target="_blank">sit amet,
+        consectetur</a> adipisicing elit,tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+    </p>
+
+    <!-- LISTS PRACTICE -->
+    <!-- start with an un-ordreed list -->
+    <ul>
+      <!-- each list item can be throught of as a bullet point and neds to
+      have an li tag -->
+      <li> Unordered List Item 1 </li>
+      <li> Unordered List item 2 </li>
+    </ul>
+    <!-- We also have an ordered list, this gets rid of the bullet points and
+  replaces it with numbers to add notion of order.  -->
+    <ol>
+      <li>Ordered List Item</li>
+    </ol>
+
+    <!-- TABLES PRACTICE -->
+    <table>
+      <thead>
+        <tr> <!-- table row, and each heading has a th tab -->
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr> <!-- THis is one row of information -->
+          <td>Any name goes here</td> <!-- this is table data -->
+          <td>any random age</td>
+          <td>Any random email</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <hr> <!-- horizontal line -->
+    <br>
+
+    <!-- FORMS (can not add functionalty, need other language, this only look)-->
+    <form action="index.html" method="post">
+      <!-- remember div are block level elements, so use div to put in blocks -->
+      <div>
+        <label>Fist Name</label>
+        <!-- name has to do with the service side programing, name would allow us to grab the value of the form -->
+        <input type="text" name="firstName" placeholder="Enter your name">
+      </div>
+      <br>
+      <div>
+        <label>Last Name</label>
+        <!-- name has to do with the service side programing, name would allow us to grab the value of the form -->
+        <input type="text" name="lastName">
+      </div>
+
+      <!-- we have a type called email -->
+      <br>
+      <div>
+        <label>Email</label>
+        <!-- name has to do with the service side programing, name would allow us to grab the value of the form -->
+        <input type="email" name="email">
+      </div>
+
+      <!-- now say we want to create a text area -->
+      <!-- name again is what u would use to take that data -->
+      <br>
+      <div>
+        <label>Message</label>
+        <textarea name='message'></textarea>
+      </div>
+
+      <!-- select list -->
+      <br>
+      <div>
+      <label>Gende</label>
+      <select name='gender'>
+        <!--- options -->
+        <option value="male">Male</option>
+        <option value = 'Female'>Female</option>
+      </select>
+      </div>
+
+      <br>
+      <div>
+        <label>Age:</label>
+        <input type="number" name="age" value="30">
+      </div>
+      <br>
+      <div>
+        <label>Birthday:</label>
+        <input type="date" name="birthday">
+      </div>
+      <br>
+      <!-- will get processed to whatever is in action of the form -->
+      <input type="submit" name="submit" value="Submit">
+
+    </form>
+
+    <!-- button outside the form, javascript adds funcitonality -->
+    <br>
+    <button>Click me</button>
+    <br>
+    <br />
+    <!-- can also make the image a link -->
+    <a href="http://www.espncricinfo.com">
+    <!--- image tag (it is a self closing tag) -->
+    <img src="sample.jpg" alt="displays text when img not found" width="200">
+    </a>
+
+    <!-- Quotations -->
+    <!-- blockquote is for some type of quote -->
+    <blockquote cite="http://www.espncricinfo.com">
+      Lorem ipsum dolor sit amet
+    </blockquote>
+
+    <!-- abreviations -->
+    <p>The <abbr title="the world wide web">WWW</abbr> is awsome</p>
+
+    <!-- Italic style -->
+    <p>this is a <cite>cheat sheet</cite> for HTML</p>
+
+  </body>
+</html>
